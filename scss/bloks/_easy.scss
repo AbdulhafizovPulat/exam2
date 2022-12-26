@@ -1,0 +1,156 @@
+.easy {
+  margin: 50px 0;
+  .easy__content {
+    display: flex;
+    align-items: center;
+    gap: 125px;
+  }
+  &__card {
+    width: 40%;
+    .easy__header {
+      display: flex;
+      column-gap: 6.4px;
+      padding: 12px 0 12px 16px;
+      background-color: #2e3f4d;
+      div {
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        background-color: $bg-color-btn;
+        &:nth-child(2) {
+          background-color: #527695;
+        }
+        &:nth-child(3) {
+          background-color: #36536b;
+        }
+      }
+    }
+    .easy__main {
+      padding: 32px;
+      background-color: #1b262f;
+      color: $white-color;
+      p {
+        line-height: 30px;
+      }
+    }
+  }
+  &__box {
+    width: 40%;
+    h2 {
+      @extend %title;
+      color: $title-color;
+      margin-bottom: 24px;
+    }
+    p {
+      @extend %text;
+      color: $text-color;
+    }
+  }
+}
+
+@media only screen and (max-width: 973px) {
+  .easy {
+    margin: 50px 0;
+    .easy__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+    &__card {
+      width: 70%;
+      .easy__header {
+        div {
+          border-radius: 50%;
+        }
+      }
+      .easy__main {
+        padding: 30px 60px 40px;
+        p {
+          line-height: 20px;
+        }
+      }
+    }
+    &__box {
+      width: 90%;
+      text-align: center;
+      h2 {
+        margin-bottom: 24px;
+      }
+      p {
+        color: $text-color;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 650px) {
+  .easy {
+    margin: 50px 0;
+    .easy__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+    &__card {
+      width: 70%;
+      .easy__header {
+        div {
+          border-radius: 50%;
+        }
+      }
+      .easy__main {
+        padding: 10px 20px 10px;
+        p {
+          line-height: 20px;
+        }
+      }
+    }
+    &__box {
+      width: 90%;
+      text-align: center;
+      h2 {
+        margin-bottom: 24px;
+      }
+      p {
+        color: $text-color;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 568px) {
+  .easy {
+    margin: 50px 0;
+    .easy__content {
+      display: flex;
+    }
+    &__card {
+      width: 90%;
+      .easy__header {
+        div {
+          border-radius: 50%;
+        }
+      }
+      .easy__main {
+        padding: 10px 20px 10px;
+        p {
+          line-height: 20px;
+        }
+      }
+    }
+    &__box {
+      width: 90%;
+      text-align: center;
+      h2 {
+        margin-bottom: 24px;
+        font-size: 36px;
+        line-height: 36px;
+      }
+      p {
+        color: $text-color;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    }
+  }
+}
